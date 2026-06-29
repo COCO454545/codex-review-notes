@@ -1,0 +1,6 @@
+interface:
+  display_name: "AI Video Pipeline"
+  short_description: "Learn from references, produce, verify, clean, and evolve AI videos"
+  default_prompt: "Use $ai-video-production-skill to learn from references, initialize a clean video project, create or refine the video, verify the final MP4, clean junk, and distill reusable lessons."
+policy:
+  allow_implicit_invocation: true

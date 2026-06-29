@@ -1,0 +1,51 @@
+# Project artifacts are not part of the global Codex knowledge sync.
+Project_*/
+!Project_00_全局工作台/
+!Project_00_全局工作台/**
+
+# Secrets and local configuration
+.env
+.env.*
+*.key
+*.pem
+*.pfx
+*.token
+auth.json
+secrets.*
+
+# Large/generated outputs
+node_modules/
+dist/
+dist_*/
+build/
+out/
+99_temp/
+__pycache__/
+*.pyc
+*.log
+*.tmp
+*.cache
+
+# Media and large documents
+*.mp4
+*.mov
+*.avi
+*.mkv
+*.mp3
+*.wav
+*.aac
+*.pdf
+*.docx
+*.xlsx
+*.pptx
+*.zip
+*.7z
+*.rar
+
+# Approved tiny reference assets inside synced personal skills.
+!skills/**/assets/voice-style-reference.mp3
+
+# Local IDE/app state
+.idea/
+.vscode/
+.ipynb_checkpoints/

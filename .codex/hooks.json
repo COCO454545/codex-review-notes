@@ -1,0 +1,44 @@
+{
+  "hooks": {
+    "UserPromptSubmit": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "python .codex/hooks/user_prompt_router.py",
+            "commandWindows": "python .codex\\hooks\\user_prompt_router.py",
+            "timeout": 10,
+            "statusMessage": "Checking workspace SOP"
+          }
+        ]
+      }
+    ],
+    "PreToolUse": [
+      {
+        "matcher": "Bash|exec_command|apply_patch|Edit|Write",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "python .codex/hooks/workspace_guard.py",
+            "commandWindows": "python .codex\\hooks\\workspace_guard.py",
+            "timeout": 15,
+            "statusMessage": "Guarding workspace paths and render gates"
+          }
+        ]
+      }
+    ],
+    "Stop": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "python .codex/hooks/stop_quality_gate.py",
+            "commandWindows": "python .codex\\hooks\\stop_quality_gate.py",
+            "timeout": 20,
+            "statusMessage": "Checking project completion evidence"
+          }
+        ]
+      }
+    ]
+  }
+}
