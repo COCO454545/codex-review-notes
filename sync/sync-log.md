@@ -4,6 +4,24 @@
 
 ---
 
+## 2026-06-29 | 家庭端 | 删除多余 main 分支，统一用 master
+
+### 背景
+- 本地 Git 默认分支名为 `master`，GitHub 新仓库默认分支为 `main`
+- 首次推送后形成两个并行分支：`main`（空）和 `master`（完整内容）
+
+### 处理
+- 删除远程 `main` 分支
+- 保留 `master` 为唯一主分支
+
+### 后续同步命令
+```bash
+git pull origin master
+git push origin master
+```
+
+---
+
 ## 2026-06-29 | 家庭端 | 仓库初始化与首次合并
 
 ### 新增内容
