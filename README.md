@@ -98,7 +98,11 @@ codex-review-notes/
 
 ## ⚡ Claude Code Skills 技能库
 
-所有 Skill 都在 `claude/skills/` 目录下，在 Claude Code 设置中添加该路径即可使用。
+**本地统一原则：所有自己封装的 Skills 统一存放在 `D:\Workspace\skills\`。**
+
+GitHub 仓库中的 `claude/skills/` 是用于跨设备同步的副本；本地工作时，以 `D:\Workspace\skills\` 作为唯一统一入口，不要把正式 Skills 散落在某个项目目录下面。
+
+所有 Skill 都在 `claude/skills/` 目录下同步保存，在 Claude Code 设置中添加本地统一路径 `D:\Workspace\skills` 即可使用。
 
 | Skill 名称 | 用途 | 使用场景 |
 |-----------|------|---------|
@@ -108,7 +112,9 @@ codex-review-notes/
 | **project-retrospective** | 项目复盘沉淀模板 | 项目完成后复盘时 |
 | **ai-video-generator** | AI 高密度讲解视频生产 | 做技术分享视频时 |
 
-> 💡 技能使用方式：在 Claude Code 中直接说"使用 xxx skill"即可
+> 💡 本地使用方式：Claude Code 统一指向 `D:\Workspace\skills`
+> 
+> 💡 GitHub 中的 `claude/skills/` 只负责同步，不作为本地唯一来源
 
 ---
 

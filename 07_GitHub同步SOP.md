@@ -46,10 +46,11 @@ AGENTS.md
 .codex/hooks.json
 .codex/hooks/*.py
 .codex/hooks/*.md
-claude/skills/*.md          ← 新增：Claude Code 通用文本 Skills
+skills/*.md                  ← 本地统一 Skills 真源（D:\Workspace\skills）
+claude/skills/*.md          ← GitHub 同步副本，供跨设备复用
 skills/ai-video-production-skill/
 Project_00_全局工作台/
-sync/*.md                   ← 新增：同步机制文档
+sync/*.md
 ```
 
 说明：
