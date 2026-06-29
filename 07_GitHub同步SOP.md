@@ -46,8 +46,8 @@ AGENTS.md
 .codex/hooks.json
 .codex/hooks/*.py
 .codex/hooks/*.md
-skills/*.md                  ← 本地统一 Skills 真源（D:\Workspace\skills）
-claude/skills/*.md          ← GitHub 同步副本，供跨设备复用
+skills/*/SKILL.md            ← 本地统一 Skills 真源（D:\Workspace\skills）
+claude/skills/*/SKILL.md     ← GitHub 同步副本，供跨设备复用
 skills/ai-video-production-skill/
 Project_00_全局工作台/
 sync/*.md
